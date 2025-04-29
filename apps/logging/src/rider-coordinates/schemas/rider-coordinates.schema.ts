@@ -5,7 +5,7 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 export type RiderCoordinateDocument = HydratedDocument<RiderCoordinate>;
 
 @Schema()
-class RiderCoordinate {
+export class RiderCoordinate {
     @Prop({ required: true })
     lat: number;
     @Prop({ required: true })
